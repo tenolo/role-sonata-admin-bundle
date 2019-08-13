@@ -1,0 +1,52 @@
+{
+    "name": "tenolo/role-sonata-admin-bundle",
+    "description": "Implements role bundle into sonata admin.",
+    "keywords": [
+        "role",
+        "sonata",
+        "admin",
+        "tenolo",
+        "symfony",
+        "bundle"
+    ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "homepage": "https://tenolo.de",
+    "authors": [
+        {
+            "name": "tenolo - Robert Bernis, Johannes Herberhold GbR",
+            "email": "info@tenolo.de",
+            "homepage": "https://tenolo.de"
+        },
+        {
+            "name": "Nikita Loges",
+            "email": "n.loges@tenolo.de"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+
+        "symfony/framework-bundle": "~2.8|~3.4|~4.0",
+        "symfony/http-kernel": "~2.8|~3.4|~4.0",
+        "symfony/config": "~2.8|~3.4|~4.0",
+        "symfony/dependency-injection": "~2.8|~3.4|~4.0",
+        "symfony/form": "~2.8|~3.4|~4.0",
+        "symfony/validator": "~2.8|~3.4|~4.0",
+
+        "sonata-project/doctrine-orm-admin-bundle": "~3.7",
+        "tenolo/user-bundle": "~2.0",
+        "tenolo/role-bundle": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tenolo\\Bundle\\RoleAdminBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

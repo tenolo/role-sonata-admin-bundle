@@ -1,0 +1,6 @@
+services:
+    tenolo_role_admin.category:
+        class: Tenolo\Bundle\RoleAdminBundle\Admin\RoleAdmin
+        arguments: [~, Tenolo\Bundle\RoleBundle\Entity\Entities\Role, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Rolle, group: "%sonata.user.admin.groupname%" }
